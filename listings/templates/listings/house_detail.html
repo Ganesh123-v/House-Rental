@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ house.title }}</title>
+</head>
+<body>
+    <h1>{{ house.title }}</h1>
+    <p><strong>Price:</strong> €{{ house.price }}</p>
+    <p><strong>Address:</strong> {{ house.address }}</p>
+    <p>{{ house.description }}</p>
+    <a href="{% url 'house_list' %}">Back to listings</a>
+</body>
+</html>
